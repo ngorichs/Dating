@@ -1,0 +1,45 @@
+fieldset {
+
+    background: lightyellow;
+    border:10px solid yellow;
+    margin-bottom: 10px;
+    width: 720px;
+}
+
+label {
+    width: 180px;
+    display:inline-block;
+    text-align: right;
+
+
+
+}
+
+.box {
+    width:auto;
+
+}
+.gender {
+    width:auto;
+
+}
+
+.slideside1 {
+    text-align: center;
+width: 70px;
+    background: darkred;
+    color: white;
+}
+.slideside2{
+
+background: purple;
+    text-align: center;
+    width: 70px;
+    color: white;
+
+}
+textarea {
+
+    width:360px;
+    height: 50px;
+}

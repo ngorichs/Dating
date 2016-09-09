@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dating Site</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <style> article, aside, figure, footer, header,
+
+    menu, nav, section { display: block; } </style>
+
+
+    <script type="text/javascript">
+
+        function readURL(input) {
+
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+
+                    $('#blah')
+
+                            .attr('src', e.target.result)
+
+                            .width(150)
+
+                            .height(200);
+
+                };
+
+                reader.readAsDataURL(input.files[0]);
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<h1>Please enter your details for our dating website!</h1>
+
+<form>
+
+    <fieldset>
+        <legend>Your face</legend>
+        <label for="face">Your image:</label>
+        <input type="file" id="face" onchange="readURL(this);" required>
+        <br>
+        <label for="face">Image preview:</label>
+        <img src="#" id="preview">
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Your general details</legend>
+        <label for="fullname">Name:</label>
+        <input type="text" required id="fullname" value="Your full name" required>
+        <br>
+        <label>Gender:</label>
+        <input type="radio" id="gender1">
+        <label for="gender1" class="gender">Male</label>
+        <input type="Radio" id="gender2">
+        <label for="gender2" class="gender">Female</label>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" value="18" required>
+        <br>
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" required>
+        <br>
+        <label for="color">Favorite color:</label>
+        <input type="color" id="color">
+        <br>
+        <label for="country">Which country:</label>
+        <select id="country">
+            <option>No selection</option>
+            <option>Afghanistan</option>
+            <option>Iraq</option>
+            <option>Russia</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+
+        </select>
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Your indicators</legend>
+        <label for="height">Height:</label>
+        <label for="height" class="slideside1">Short</label>
+        <input type="range" min="0" max="100" id="height">
+        <label for="height" class="slideside2">Tall</label>
+        <br>
+        <label for="salary">Salary:</label>
+        <label for="salary" class="slideside1">Poor</label>
+        <input type="range" min="0" max="100" id="salary">
+        <label for="salary" class="slideside2">Rich</label>
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Your contact information</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile">
+        <br>
+        <label for="address">Address:</label> <textarea id="address"></textarea>
+        <br>
+        <label>Method to contact you:</label>
+        <input type="checkbox" id="emailbox" class="box"> <label for="emailbox" class="box">Email</label>
+        <input type="checkbox" id="whatsappbox" class="box"> <label for="whatsappbox" class="box">Whatsapp</label>
+        <input type="checkbox" id="inappbox" class="box"> <label for="inappbox" class="box">In-app chat</label>
+
+
+    </fieldset>
+
+<input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
